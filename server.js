@@ -3,7 +3,7 @@ const app=express()
 const mongoose=require('mongoose')
 const User=require('./userSchema')
 const Contact=require('./contactSchema')
-const uri = "mongodb+srv://rishabh768:HdKo8CI5XNoIFSoG@cluster0.osfrgnc.mongodb.net/mydatabase?retryWrites=true&w=majority"
+const uri = 'your url here';
 app.use(express.json())
 mongoose.connect(uri).then(e=>{
     console.log('connected')
